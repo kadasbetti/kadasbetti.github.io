@@ -1,0 +1,35 @@
+body{
+    width: 630px;
+    margin: auto;
+    margin-top:20px;
+}
+
+p{
+    width: 50px;
+    height: 50px;
+    border:0;
+    margin: 5px;
+}
+
+.first, .second{
+    display: flex;
+    padding: 20px;
+}
+
+.first p{
+    background-color: blue;
+}
+
+.second p{
+    background-color: blueviolet;
+}
+
+.first{
+    border: 2px solid blue;
+    margin-bottom:20px;
+}
+
+.second{
+    border:2px solid blueviolet;
+    background-color: orange;
+}

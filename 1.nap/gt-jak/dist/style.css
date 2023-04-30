@@ -1,0 +1,29 @@
+main{
+  border: 5px solid #4285f4;
+  color:white;
+  text-align:center;
+  width:300px;
+}
+
+p{
+  margin:0;
+  padding: 20px;
+  font-size: 26px;
+  font-family: 'Rubik Pixels', cursive;
+}
+
+.n{
+  background-color:#E67676;
+}
+
+.e{
+  background-color:#F2F062;
+}
+
+.s{
+  background-color:#A9E6E6;
+}
+
+.w{
+  background-color:#7692E4;
+}

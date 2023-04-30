@@ -1,0 +1,23 @@
+label, input{
+  display:block;
+  text-transform: uppercase;
+  margin-bottom:5px;
+}
+
+label, button{
+  font-type:serif;
+}
+
+input{
+  padding:15px;
+  border-radius: 5px;
+  border: 3px solid greenyellow; 
+}
+
+button{
+  background-color:greenyellow;
+  border:0;
+  padding:15px;
+  border-radius: 30px;  
+}
+

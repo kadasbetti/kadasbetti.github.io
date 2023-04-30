@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let i = 1;i <11; i++){
+            console.log(i)
+        }
+
+        for(let i = 0;i <21; i++){
+            
+            if(i%2===0){
+            console.log(i)
+            }
+        }
+
+
+        //FÜGGVÉNYEK
+
+                    //1. feladat//
+
+                    function printNumbersTill(n) 
+                    {
+                    for(let i = 1;i <=n; i++){
+                        console.log(i)}
+                    }
+
+                    printNumbersTill(20)
+
+
+                    //2.feladat//
+                    let greeting = 'Hello '
+                    function greetingsTo(name){
+                        console.log(greeting + name + '!')
+                    }
+
+                    greetingsTo('Mark')
+        
+        //FOR, TÖMBÖK
+                    //1 feladat
+
+                    function printArray(array) {
+                        for (let i = 0; i < array.length; i++) {
+                            console.log(array[i]);
+                        }}
+
+                    printArray([0,2,4,6])
+
+                    //2. feladat
+
+                    function printArrays(array) {
+                    array.forEach(function(element) {
+                        console.log(element);
+                    });
+                    }
+
+                    printArrays([15,25,35])
+
+
+    </script>
+</body>
+</html>

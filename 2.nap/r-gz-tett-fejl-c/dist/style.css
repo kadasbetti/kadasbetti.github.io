@@ -1,0 +1,53 @@
+header{
+ background-color:purple;
+ height:70px;
+ display:flex;
+ align-items:center;
+ position:fixed;
+ top:0;
+ width:100%;
+}
+
+button{
+  background-color:cyan;
+  height:30px;
+  width:100px;
+  border:0;
+  margin-left:10px;
+  padding:0;
+}
+
+button#elso{
+  margin-left:100px;
+}
+
+button#közép{
+ width:150px; 
+}
+
+
+
+main{
+  background-color:yellow;
+  height:500px;
+  flex-grow:4;
+}
+
+aside{
+  background-color:lime;
+  height:500px;
+  flex-grow:1;
+}
+
+container{
+  display:flex;
+  margin:80px 100px 10px 100px;
+}
+
+
+
+footer{
+  background-color:grey;
+  height:80px;
+  margin:0 100px;
+}

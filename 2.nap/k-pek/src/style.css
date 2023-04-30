@@ -1,0 +1,9 @@
+.kepek{
+  width:300px;
+  margin:50px;
+}
+
+.kepek:hover{
+  width:400px;
+  margin:0;
+}
