@@ -1,7 +1,7 @@
 let data = {
     photo: 'images/antelope-canyon.jpg',
-    title: 'Antelope Canyon',
-    description: 'This slot canyon located in Arizona, USA, is famous for its swirling patterns and smooth curves carved into the sandstone by years of wind and water erosion. The sunlight filtering through the narrow openings creates a striking contrast of light and shadow.'
+    title: 'Aurora Borealis',
+    description: 'This stunning natural light display is caused by collisions between electrically charged particles from the sun that enter the Earths atmosphere. The result is a breathtaking array of colors and patterns that dance across the night sky.'
   };
 
   $('#mainpicture').attr('src', data.photo);
@@ -12,7 +12,7 @@ let data = {
 
   let currentPhoto = 0;
   let imagesData = [
-    {title: 'Aurora Borealis', photo: 'images/auorora-borealis.jpg', description: 'This stunning natural light display is caused by collisions between electrically charged particles from the sun that enter the Earths atmosphere. The result is a breathtaking array of colors and patterns that dance across the night sky.'},
+    {title: 'Aurora Borealis', photo: 'images/aurora-borealis.jpg', description: 'This stunning natural light display is caused by collisions between electrically charged particles from the sun that enter the Earths atmosphere. The result is a breathtaking array of colors and patterns that dance across the night sky.'},
     {title: 'Biolominescent Beach', photo: 'images/bioluminescent-beach.jpg', description: 'This rare phenomenon occurs when millions of tiny organisms called dinoflagellates emit light through chemical reactions in their cells. When the waves crash onto the shore, the water glows an ethereal blue, creating a truly magical experience.'},
     {title: 'Cherry Blossom Trees', photo: 'images/cherry-blossom-trees.jpg', description: 'Every spring, the delicate pink and white blossoms of cherry trees transform parks and gardens around the world into a fairy tale-like wonderland. This beautiful sight is a symbol of the fleeting nature of life and the beauty of impermanence.'},
     {title: 'Great Barrier Reef', photo: 'images/great-barrier-reef.jpg', description: 'The worlds largest coral reef system, the Great Barrier Reef is a vibrant underwater world teeming with life. From colorful fish to intricate coral formations, there is always something new and exciting to discover in this natural wonder.'},
@@ -34,7 +34,7 @@ let loadPhoto = (currentPhoto) => {
 }
 
 $('#leftarrow').click(() => {
-  if(currentPhoto > 1) {
+  if(currentPhoto > 0) {
     currentPhoto--;  
   }
   loadPhoto(currentPhoto);
@@ -48,15 +48,3 @@ $('#rightarrow').click(() => {
 });
 
 
-
-data.forEach((item, index) => {
-  $('#container').append(`<div class="box" data-index="${index}">${item} (data-index="${index}")</div>`);
-  $('.box').click((event) => {
-    let indexClicked = $(event.target).attr('data-index');
-    // indexClicked is now a string! if you need it as a number you have to change it
-    // because for example "1" + 1 is going to be "11" and not 2
-    let numberIndex = parseInt(indexClicked);
-    // now numberIndex is a number
-    $('#clicked').text(data[indexClicked]);
-  });
-});
