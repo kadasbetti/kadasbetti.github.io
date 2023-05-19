@@ -1,0 +1,63 @@
+body{
+    background-color: #feffdf;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+header{
+    background-color: #3d6b89;
+    color:#feffdf;;
+    height: 70px;
+    width: 100%;
+    margin: auto;
+    margin-top:0;
+    font-family: 'Sacramento', cursive;
+    font-size:50px;
+    width: 1200px;
+    
+}
+
+
+main{
+    margin-top:70px;
+    width:1000px;
+    margin:auto;
+    background-color: #dee287;
+    padding-top:30px;
+    padding-bottom:10px;
+    
+}
+
+h1{
+    background-color: #3d6b89;
+    width: 220px;
+    color:#feffdf;
+    margin-left:20px;
+
+}
+
+button{
+    background-color: #97cba9;
+    border:5px solid #3d6b89;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+}
+button:hover{
+    background-color: #dee287;
+}
+
+
+.myprojects{
+    display:block;
+    margin:auto;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 90%;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
